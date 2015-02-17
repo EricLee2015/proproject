@@ -1,12 +1,30 @@
-*.class
+public class DemoJava{
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+   private static String name = null;
+   
+   static{
+    
+     System.out.println("gist");  
+   }
+   private  DemoJava(){
+   
+     this.name = "myGit";
+     System.out.println(this.name);
+   }
 
-# Package Files #
-*.jar
-*.war
-*.ear
+   private  DemoJava(String name){
+    this(); 
+    System.out.println("will be here in " + name);
+   } 
+   
+   private  DemoJava(String name, String say){
+    this("my git file"); 
+    System.out.println("along with " + say);
+   } 
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+   public statci void main(String args[]){
+    
+    DemoJava jenner = new DemoJanva("hello","github");
+   }
+
+}
