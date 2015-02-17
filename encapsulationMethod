@@ -1,0 +1,28 @@
+
+//basic encapsulation: setter and getter in interface or API
+public class EmployeeCount{
+  
+  private int NoOfEmp = 0;
+  
+  public void setNoOfEmp(int count){
+    
+    NoOfEmp = count; 
+  }
+  
+  public double getNoOfEmp(){
+  
+    return NoOfEmp;
+  } 
+  
+}
+
+public class CountEmployee{
+
+  public static void main(String args[]){
+      
+     EmployeeCount NumOfEm = new EmployeeCount();
+     NumOfEm.setNoOfEmp(200);
+     System.out.println("employees in the company are: " + NumOfEm.getNoOfEmp());
+  }
+
+}
